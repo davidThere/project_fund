@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Account Summary</h1>
+
+<!-- Image Upload Form -->
+<form action="{{ url_for('account_summary') }}" method="post" enctype="multipart/form-data" style="text-align: center; margin-bottom: 20px;">
+    <label for="file">Upload Your Investment Portfolio:</label><br><br>
+    <input type="file" name="file" id="file" accept="image/*"><br><br>
+    <button type="submit">Upload</button>
+</form>
+
+<!-- Display Uploaded Image -->
+{% if image_url %}
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <img src="{{ image_url }}" alt="Investment Portfolio" style="max-width: 80%; height: auto; border: 2px solid #000;">
+    </div>
+{% else %}
+    <p style="text-align: center; margin-top: 20px;">No image uploaded yet.</p>
+{% endif %}
+
+{% endblock %}

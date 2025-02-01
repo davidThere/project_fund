@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Upload Weekly Post</h1>
+<form method="post" enctype="multipart/form-data">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" required><br><br>
+    
+    <label for="content">Content (optional if uploading a file):</label><br>
+    <textarea id="content" name="content" rows="10" cols="50"></textarea><br><br>
+    
+    <label for="file">Upload file (.docx or .txt):</label><br>
+    <input type="file" id="file" name="file"><br><br>
+    
+    <button type="submit">Submit Post</button>
+</form>
+{% endblock %}

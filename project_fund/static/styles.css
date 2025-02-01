@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    background-color: #1C1C1C;  /* Dark Gray Background */
+    color: #FF6600;             /* Orange Default Text */
+    font-family: 'Bw Haas Grotesk', Arial, sans-serif;  /* Updated Font */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;  /* Black Header Background */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FF6600;  /* Orange Links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on Hover */
+}
+
+/* Content Styles */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1E1E1E;  /* Slightly Lighter Dark Gray */
+    border-radius: 5px;
+    border: 1px solid #333333;  /* Thin Border */
+}
+
+h1, h2, h3 {
+    color: #FFFFFF;  /* White Headers */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p, li, span, table td {
+    color: #FF6600;  /* Orange Text for Subcontent */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #333333;  /* Dark Gray Header */
+    color: #FFFFFF;  /* White Header Text */
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+}
+
+table td {
+    border: 1px solid #333333;  /* Thin Border */
+    padding: 8px;
+    text-align: left;
+    background-color: #1E1E1E;  /* Dark Cell Background */
+}
+
+table tr:nth-child(even) {
+    background-color: #2B2B2B;  /* Slightly Lighter Row Background */
+}
+
+/* Button Styles */
+button {
+    background-color: #FF6600;  /* Orange Buttons */
+    color: #FFFFFF;  /* White Text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #FF9900;  /* Brighter Orange on Hover */
+}
+
+/* Input Fields */
+input, textarea {
+    background-color: #262626;  /* Dark Input Background */
+    color: #FFFFFF;  /* White Text */
+    border: 1px solid #4D4D4D;  /* Medium Gray Border */
+    padding: 8px;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #FF6600;  /* Orange Focus Border */
+    outline: none;
+}
+
+/* Image Styling */
+.account-summary-image {
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #FF6600;  /* Orange Border for Images */
+    max-width: 80%;
+    height: auto;
+}
+
+/* Form Styling */
+form {
+    background-color: #1E1E1E;  /* Dark Gray Form Background */
+    padding: 15px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    text-align: center;
+    color: #FF6600; /* Orange Text */
+}
+
+/* Footer Styles (Optional) */
+footer {
+    background-color: #000000;  /* Black Footer Background */
+    color: #FF6600;  /* Orange Footer Text */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 1px solid #333333;
+}
+
+/* Logo Styling */
+.logo-container {
+    position: fixed; /* Keeps the logo fixed in the top-left */
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* Ensures the logo is above other elements */
+}
+
+.site-logo {
+    width: 60px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: make the logo circular */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #000000; /* Black navigation bar */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FF6600; /* Orange links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
